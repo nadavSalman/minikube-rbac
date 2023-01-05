@@ -3,7 +3,7 @@
 
 
 ## Train Kubernetes RBAC
-The `dev-rbac` create the follwing workflow :
+The `dev-rbac` Helm Chart create the follwing workflow :
 
 
 ![ScreenShot](screenshots/k8s-rbac-demo.png.jpg)
