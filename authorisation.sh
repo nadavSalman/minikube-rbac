@@ -1,17 +1,8 @@
 #!/bin/bash
-
+set -x 
 users=("team-a" "team-b" "team-c")
-for user in "${users[@]}"
-do
-    echo $user
+for user in "${users[@]}" ; do 
+    for ns in "${users[@]}" ; do 
+        kubectl get pods --as=$user -n $ns
+    done
 done
-
-
-
-
-# list_a=( 1 2 )
-# list_b=( 3 4 )
-
-# for key in "${list_a[@]}" "${list_b[@]}"; do
-#   echo "the key is: $key"
-# done
