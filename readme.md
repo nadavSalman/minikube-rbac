@@ -9,7 +9,10 @@ The `dev-rbac` Helm Chart create the follwing workflow :
 ![ScreenShot](screenshots/k8s-rbac-demo.png.jpg)
 
 
-
+Installl the chart : 
+```bash
+$ helm install  dev-rbac . --debug
+```
 
 
 
